@@ -1,0 +1,12 @@
+.formContainer {
+  /* box model */
+  width: 100%;
+  height: 18rem;
+  margin-bottom: 3rem;
+}
+
+.formTitle {
+  /* box model */
+  margin-bottom: 1.5rem;
+}
+

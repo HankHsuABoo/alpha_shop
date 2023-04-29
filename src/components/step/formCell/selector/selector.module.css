@@ -1,0 +1,22 @@
+.select {
+  cursor: pointer;
+  /* clear default */
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.selectWrapper {
+  /* display */
+  position: relative;
+}
+.selectWrapper::after {
+  /* create triangle*/
+  content: "";
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: black transparent transparent transparent;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}

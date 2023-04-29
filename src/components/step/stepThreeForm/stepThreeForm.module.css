@@ -1,0 +1,41 @@
+.formContainer {
+  /* box model */
+  width: 100%;
+  height: 18rem;
+  margin-bottom: 3rem;
+}
+.formTitle {
+  /* box model */
+  margin-bottom: 1.5rem;
+}
+.personName,
+.creditCardNum,
+.period,
+.securityCode {
+  /* display */
+  display: flex;
+  flex-direction: column;
+}
+.formBody {
+  /* display */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1.5rem 2rem;
+  grid-template-areas:
+  'name name name name . .'
+  'num num num num . .'
+  'period period period code code code'
+}
+.personName {
+  grid-area: name;
+}
+.creditCardNum {
+  grid-area: num;
+}
+.period {
+  grid-area: period;
+}
+.securityCode {
+  grid-area: code;
+}

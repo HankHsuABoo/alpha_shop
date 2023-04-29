@@ -1,0 +1,25 @@
+.stepGroup {
+  /* display */
+  display: flex;
+  align-items: center;
+}
+.stepIcon {
+  /* display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box model */
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 5px;
+  border: 1px solid black;
+  border-radius: 50%;
+  /* font & others */
+  text-align: center;
+  line-height: 100%;
+}
+.stepTitle {
+  /* font & others */
+  font-size: 1rem;
+  line-height: 100%;
+}

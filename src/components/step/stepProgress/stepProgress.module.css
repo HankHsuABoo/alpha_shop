@@ -1,0 +1,29 @@
+.checkIcon {
+  /* box model */
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 5px;
+  display: none;
+}
+.stepsContainer {
+  /* display */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* box model */
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.stepContainer {
+  /* display */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.connectLine {
+  /*box model*/
+  width: 4rem;
+  height: 0.1rem;
+  margin: 0 1.5rem;
+  background-color: black;
+}
