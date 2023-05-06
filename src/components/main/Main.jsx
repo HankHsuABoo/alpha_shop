@@ -1,12 +1,13 @@
-import { StepProgress } from '../step/stepProgress/StepProgress';
-import { StepOneForm } from '../step/stepOneForm/StepOneForm.jsx';
-// import { StepTwoForm } from '../step/stepTwoForm/StepTwoForm.jsx';
-// import { StepThreeForm } from '../step/stepThreeForm/StepThreeForm.jsx';
-import { ProgressControl } from '../step/progressControl/ProgressControl.jsx';
-import styles from "./main.module.css"
+import StepProgress from '../Step/StepProgress/StepProgress';
+import StepOneForm from '../Step/StepOneForm/StepOneForm.jsx';
+import Cart from "../Cart/Cart/Cart.jsx"
+// import { StepTwoForm } from '../Step/StepTwoForm/StepTwoForm.jsx';
+// import { StepThreeForm } from '../Step/StepThreeForm/StepThreeForm.jsx';
+import ProgressControl from '../Step/ProgressControl/ProgressControl.jsx';
+import styles from "./Main.module.css"
 
 
-export function Main() {
+export default function Main() {
   return (
     <div className ={styles.mainContainer}>
       <h1 className={styles.mainTitle}>結帳</h1>
@@ -19,7 +20,7 @@ export function Main() {
           <ProgressControl/>
         </div>
         <div className={styles.cart}>
-          {/*cart*/}
+          <Cart/>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import checkIcon from "../../../icon/circle-check-solid.svg"
-import {Step} from "../singleStep/SingleStep.jsx"
+import Step from "../SingleStep/SingleStep.jsx"
 import {steps} from "../../../data/stepsData"
-import styles from "./stepProgress.module.css"
+import styles from "./StepProgress.module.css"
  
 function renderStep(stepData) {
   return (
@@ -30,7 +30,7 @@ function renderStep(stepData) {
   )
  }
 
- export function StepProgress() {
+ export default function StepProgress() {
   return(
     <div className ={styles.stepsContainer}>
       {renderStep(steps)}

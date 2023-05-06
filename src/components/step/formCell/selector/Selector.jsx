@@ -1,6 +1,6 @@
-import styles from "./selector.module.css"
+import styles from "./Selector.module.css"
 
-export function Selector({ className, title, optionsData }){
+export default function Selector({ className, title, optionsData }){
   const options = optionsData.map(option =>{
       return(
       <option value={option.value}>{option.title}</option>

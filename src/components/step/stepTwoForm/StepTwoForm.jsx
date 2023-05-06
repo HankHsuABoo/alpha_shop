@@ -1,8 +1,8 @@
-import {DeliveryMethod} from "../formCell/deliveryMethod/DeliveryMethod.jsx"
+import DeliveryMethod from "../FormCell/DeliveryMethod/DeliveryMethod.jsx"
 import {deliveryMethods} from "../../../data/deliveryMethods.js"
-import styles from "./stepTwoForm.module.css"
+import styles from "./StepTwoForm.module.css"
 
-export function StepTwoForm() {  
+export default function StepTwoForm() {  
   return(
     <div className ={styles.formContainer}>
       <h2 className ={styles.formTitle}>運送方式</h2>

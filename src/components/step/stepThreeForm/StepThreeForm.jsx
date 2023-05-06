@@ -1,7 +1,7 @@
-import {TextInput} from "../formCell/TextInput.jsx"
-import styles from "./stepThreeForm.module.css"
+import TextInput from "../FormCell/TextInput.jsx"
+import styles from "./StepThreeForm.module.css"
 
-export function StepThreeForm() {
+export default function StepThreeForm() {
   return(
     <div className={styles.formContainer}>
       <h2 className={styles.formTitle}>付款資訊</h2>

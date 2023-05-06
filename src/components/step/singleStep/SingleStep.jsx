@@ -1,6 +1,6 @@
-import styles from "./singleStep.module.css"
+import styles from "./SingleStep.module.css"
 
-export function Step({ number, title }) {
+export default function Step({ number, title }) {
   return (
       <div className={styles.stepGroup}>
         <div className ={styles.stepIcon}>{number}</div>

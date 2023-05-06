@@ -1,4 +1,4 @@
-export function TextInput( {className, title, type, placeholder }) {
+export default function TextInput( {className, title, type, placeholder }) {
   return(
     <div className={className}>
       <div className="inputLabel">{title}</div>

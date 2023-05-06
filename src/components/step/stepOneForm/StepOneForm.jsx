@@ -1,10 +1,10 @@
 import {genders} from "../../../data/optionsData"
 import {regions} from "../../../data/optionsData"
-import {Selector} from "../formCell/selector/Selector.jsx"
-import {TextInput} from "../formCell/TextInput.jsx"
-import styles from "../stepOneForm/stepOneForm.module.css"
+import Selector from "../FormCell/Selector/Selector.jsx"
+import TextInput from "../FormCell/TextInput.jsx"
+import styles from "../StepOneForm/StepOneForm.module.css"
 
-export function StepOneForm() {
+export default function StepOneForm() {
   return(
     <div className={styles.formContainer}>
       <h2 className={styles.formTitle}>寄送地址</h2>

@@ -1,6 +1,6 @@
-import styles from "./progressControl.module.css"
+import styles from "./ProgressControl.module.css"
 
-export function ProgressControl() {
+export default function ProgressControl() {
   return(
     <div className={styles.progressControl}>
       <button className={styles.prevStepButton}>

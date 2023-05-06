@@ -1,5 +1,5 @@
-import styles from "./deliveryMethod.module.css"
-export function DeliveryMethod({ className, deliveryData }) {
+import styles from "./DeliveryMethod.module.css"
+export default function DeliveryMethod({ className, deliveryData }) {
   return(
     <div className={styles.radioGroup}>
       <label className={styles.radioLabel}>
