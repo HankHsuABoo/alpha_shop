@@ -2,6 +2,8 @@
   /* display */
   display: flex;
   align-items: center;
+  /* font & others */
+  color: #AFB1BD;
 }
 .stepIcon {
   /* display */
@@ -12,7 +14,7 @@
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 5px;
-  border: 1px solid black;
+  border: 1px solid #AFB1BD;
   border-radius: 50%;
   /* font & others */
   text-align: center;
@@ -23,3 +25,14 @@
   font-size: 1rem;
   line-height: 100%;
 }
+.stepIcon.current {
+  color: black;
+  border-color: black;
+}
+.stepTitle.current {
+  color: black;
+}
+.stepIcon.active {
+  display: none;
+}
+

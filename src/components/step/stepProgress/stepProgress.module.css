@@ -1,9 +1,10 @@
 .checkIcon {
+  /* display */
+  display: none;
   /* box model */
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 5px;
-  display: none;
 }
 .stepsContainer {
   /* display */
@@ -25,5 +26,13 @@
   width: 4rem;
   height: 0.1rem;
   margin: 0 1.5rem;
+  background-color: #AFB1BD;
+}
+.connectLine.active {
+  /* font & others */
   background-color: black;
+}
+.checkIcon.active {
+  /* display */
+  display: block;
 }

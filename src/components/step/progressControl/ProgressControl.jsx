@@ -1,28 +1,24 @@
 import styles from "./ProgressControl.module.css"
 
-export default function ProgressControl() {
+export default function ProgressControl({currentStep, onStepChange}) {
+  function handlePrevStep() {
+    if (currentStep>1){
+      onStepChange(currentStep - 1)
+    }
+  }
+  function handleNextStep() {
+    if (currentStep<3){
+      onStepChange(currentStep + 1)
+    }
+  }
   return(
     <div className={styles.progressControl}>
-      <button className={styles.prevStepButton}>
-        ← 上一步
+      <div>
+        {currentStep !== 1 &&<button className={styles.prevStepButton} onClick={handlePrevStep}>← 上一步</button>}
+      </div>
+      <button className={styles.nextStepButton} onClick={handleNextStep}>
+        {currentStep < 3 ? "下一步  →" : "確認下單"}
       </button>
-      <button className={styles.nextStepButton}>
-        下一步 →
-      </button>
-      {/* <section className="button-group" data-phase="shipping">
-        <button className="prev">
-          ← 上一步
-        </button>
-        <button className="next">
-          下一步 →
-        </button>
-      </section>
-      <section className="button-group" data-phase="credit-card">
-        <button className="prev">
-          ← 上一步
-        </button>
-        <button className="next">確認下單</button>
-      </section> */}
     </div>
   )
 }

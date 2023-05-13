@@ -3,7 +3,7 @@ import styles from "./Selector.module.css"
 export default function Selector({ className, title, optionsData }){
   const options = optionsData.map(option =>{
       return(
-      <option value={option.value}>{option.title}</option>
+      <option key={option.title} value={option.value}>{option.title}</option>
       )
   })
   return(
