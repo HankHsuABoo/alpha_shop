@@ -1,6 +1,13 @@
+import { useContext } from "react";
+
+import { FormContext } from "../../../context/FormContext.js";
+import { CartContext } from "../../../context/CartContext.js";
+
 import styles from "./ProgressControl.module.css"
 
 export default function ProgressControl({currentStep, onStepChange}) {
+  const {formContent} = useContext(FormContext)
+  const {totalPrice} = useContext(CartContext)
   function handlePrevStep() {
     if (currentStep>1){
       onStepChange(currentStep - 1)
@@ -9,6 +16,9 @@ export default function ProgressControl({currentStep, onStepChange}) {
   function handleNextStep() {
     if (currentStep<3){
       onStepChange(currentStep + 1)
+    }else if (currentStep === 3){
+      console.log(formContent)
+      console.log(totalPrice)
     }
   }
   return(

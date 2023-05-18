@@ -9,6 +9,6 @@ export const deliveryMethods = [
     id: "delivery-dhl",
     title: "DHL運送",
     time: "48小時內送達",
-    price: "$500"
+    price: 500
   }
 ]

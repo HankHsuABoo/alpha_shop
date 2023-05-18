@@ -1,5 +1,5 @@
 import DeliveryMethod from "../FormCell/DeliveryMethod/DeliveryMethod.jsx"
-import {deliveryMethods} from "../../../data/deliveryMethods.js"
+import { deliveryMethods } from "../../../data/deliveryMethods.js"
 import styles from "./StepTwoForm.module.css"
 
 export default function StepTwoForm() {  
@@ -9,7 +9,7 @@ export default function StepTwoForm() {
       <form className={styles.formBody}>
         {deliveryMethods.map( method => {
           return(
-            <DeliveryMethod deliveryData={method}/>
+            <DeliveryMethod key={method.id} deliveryData={method}/>
           )
         })}
       </form>
